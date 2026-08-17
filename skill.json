@@ -1,0 +1,35 @@
+{
+  "name": "genpark-desktop-creative-asset-batch-exporter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-agent desktop creative workflow scheduler & multi-platform asset batch exporter.",
+  "author": "genpark",
+  "category": "content",
+  "tags": [
+    "creative-workflow",
+    "asset-exporter",
+    "batch-media",
+    "desktop-agent",
+    "ph-august17"
+  ],
+  "inputs": {
+    "source_master_asset": {
+      "type": "string"
+    },
+    "target_aspect_ratios": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "exported_assets_urls": {
+      "type": "array"
+    },
+    "total_files_generated": {
+      "type": "integer"
+    },
+    "export_duration_sec": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
